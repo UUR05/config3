@@ -27,4 +27,6 @@ CLI-аргументы:
 - python assembler.py input.asm -o output.bin — Указывает путь к бинарнику.
 ### Тест
 python etap2.py test.asm --test
+
+
 <img width="292" height="92" alt="image" src="https://github.com/user-attachments/assets/ba6359db-80e6-46eb-885a-2ab5fe6dd885" />
