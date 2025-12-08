@@ -62,9 +62,16 @@ def encode_to_bytes(instr):
 def ir_to_string(ir):
     output = []
     for instr in ir:
+        A = instr['opcode']
         bytes_list = encode_to_bytes(instr)
-        hex_str = ' '.join(hex(b) for b in bytes_list)
-        output.append(hex_str)
+        hex_str = ', '.join(hex(b) for b in bytes_list)
+        
+        if 'b_value' in instr:
+            test_line = f"Тест (A={A}, B={instr['b_value']}): {hex_str}"
+        else:
+            test_line = f"Тест (A={A}): {hex_str}"
+        
+        output.append(test_line)
     return '\n'.join(output)
 def main():
     parser = argparse.ArgumentParser(description="Ассемблер для УВМ (Вариант 22)")
