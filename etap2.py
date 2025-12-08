@@ -69,7 +69,7 @@ def ir_to_string(ir):
 def main():
     parser = argparse.ArgumentParser(description="Ассемблер для УВМ (Вариант 22)")
     parser.add_argument('input_file', type=str, help="Путь к входному файлу .asm")
-    parser.add_argument('-o', '--output', type=str, default = 'program.bin', help="Путь к выходному файлу IR", default=None)
+    parser.add_argument('-o', '--output', type=str, default = 'program.bin', help="Путь к выходному файлу IR")
     parser.add_argument('--test', action='store_true', help="Режим тестирования: вывести IR на экран в hex")
     args = parser.parse_args()
     try:
