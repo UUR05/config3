@@ -205,19 +205,22 @@ config/
 
 ### Тест
 python etap1.py test.asm --test
+
 <img width="478" height="101" alt="image" src="https://github.com/user-attachments/assets/56b5bfb5-ac07-4ccb-9932-65cc926c5da6" />
 
 python etap2.py test.asm --test
+
 <img width="484" height="124" alt="image" src="https://github.com/user-attachments/assets/a0c75641-f421-4242-9712-c1139345c718" />
 
 python etap3.py copy_array.bin -o ppp.csv -r 95-205
+
 <img width="587" height="614" alt="image" src="https://github.com/user-attachments/assets/4ec5b661-97cb-4062-befb-3796f29d2ed6" />
 
 python etap4.py ppp.bin -o sss.csv -r 95-205
+
 <img width="566" height="458" alt="image" src="https://github.com/user-attachments/assets/44dd924b-1e18-478b-88d2-7737a9c2d4e4" />
 
 python etap5.py etap5_example1.bin -o etap5_example1.csv -r 95-205
+
 <img width="604" height="499" alt="image" src="https://github.com/user-attachments/assets/d022c4e3-922a-4ad2-a2ed-dfcdb3a7e1dd" />
 
-
-<img width="292" height="92" alt="image" src="https://github.com/user-attachments/assets/ba6359db-80e6-46eb-885a-2ab5fe6dd885" />
